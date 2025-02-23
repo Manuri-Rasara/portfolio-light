@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-light/static/css/main.7e89910f.css",
+    "main.css": "/portfolio-light/static/css/main.c0839694.css",
     "main.js": "/portfolio-light/static/js/main.d0c5534d.js",
     "static/js/453.6cf70de9.chunk.js": "/portfolio-light/static/js/453.6cf70de9.chunk.js",
     "static/media/card4project.png": "/portfolio-light/static/media/card4project.09f845f45fdff2f86278.png",
@@ -21,12 +21,12 @@
     "static/media/Berghan-Regular.otf": "/portfolio-light/static/media/Berghan-Regular.bbf7c893f4ad91b24108.otf",
     "static/media/wave.svg": "/portfolio-light/static/media/wave.c423927b0b3a8ad1d51317c4aef02f4a.svg",
     "index.html": "/portfolio-light/index.html",
-    "main.7e89910f.css.map": "/portfolio-light/static/css/main.7e89910f.css.map",
+    "main.c0839694.css.map": "/portfolio-light/static/css/main.c0839694.css.map",
     "main.d0c5534d.js.map": "/portfolio-light/static/js/main.d0c5534d.js.map",
     "453.6cf70de9.chunk.js.map": "/portfolio-light/static/js/453.6cf70de9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e89910f.css",
+    "static/css/main.c0839694.css",
     "static/js/main.d0c5534d.js"
   ]
 }
