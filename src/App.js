@@ -30,14 +30,14 @@ function App() {
            <Navbar />
           <Homecontent />
           <About/>
-          <Education/>
+          
           <Technologies/>
           <Project1/>
           <Help />
           <Contact/>
           
         
-          <Footer /> 
+      
           
         </div>
       )}

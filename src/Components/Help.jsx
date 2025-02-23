@@ -1,7 +1,9 @@
 import './Help.css';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import { fadeIn } from './Variants';
 import React, { useEffect, useRef, useState } from 'react';
+import { RiDoubleQuotesR } from 'react-icons/ri';
+import { FaQuoteLeft } from 'react-icons/fa6';
 
 export default function Help() {
     const [show, setShow] = useState(false); // Initially set to false to hide content
@@ -32,40 +34,11 @@ export default function Help() {
     }, []);
 
     return (
-        <div ref={helpRef}> {/* Attach ref to the main div */}
-            <div className='help-container'>
-                {/* <button className='helpdot'></button> */}
-                <span className='helptitle'><strong>I CAN HELP YOU WITH</strong></span>
-            </div>
-           <div className='helpparagraph'>
-           I love helping solve challenges, whether in web development, 
-           design, or software engineering. I'm eager to contribute by 
-           addressing technical issues or bringing fresh ideas to creative 
-           projects. My goal is to support others in achieving their objectives.
-           </div>
-            <div className='cardflexbox'>
-                <motion.div
-                    className='helpcard'
-                    initial="hidden"
-                    animate={show ? "show" : "hidden"}
-                    variants={fadeIn("right", 0.2)} // Fade in from the right for the first card
-                >
-                    <div className='no'>01</div>
-                    <div className='cardtitle'>DEVELOPMENT</div>
-                    <p className='cardcontent'>Bringing visuals to life through developing highly functional software and web solutions.</p>
-                </motion.div>
-
-                <motion.div
-                    className='helpcard'
-                    initial="hidden"
-                    animate={show ? "show" : "hidden"}
-                    variants={fadeIn("left", 0.5)} // Fade in from the left for the second card
-                >
-                    <div className='no'>02</div>
-                    <div className='cardtitle'>DESIGN</div>
-                    <p className='cardcontent'>Crafting engaging UI/UX designs that blend aesthetic appeal with seamless user interactions.</p>
-                </motion.div>
-            </div>
-        </div>
+        <div className='all'>
+        <div className='help'> {/* Attach ref to the main div */}
+        <h3><FaQuoteLeft      color='#000000' fontSize="48px"/></h3>
+        <div className='quote'>I enjoy solving challenges in both web development and design, where I bring software solutions to life and create engaging UI/UX designs. My goal is to seamlessly combine functionality and aesthetics, delivering experiences that are both visually appealing and highly user-friendly.</div>
+        <p><br></br>- Manuri - </p>
+        </div></div>
     );
 }

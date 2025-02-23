@@ -1,151 +1,96 @@
-.contactcontent p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: rgb(173, 169, 169);
-    font-size: 40px;
-    line-height: 1.5;
-    letter-spacing: .01rem;
-    font-weight: 200;
-    width: 67%;
-    text-align: justify;
-   
-   
-
-}
-.pic{
-    width: 80px;
-    margin-bottom: -3.3%;
-    margin-right: 1.5%;
-}
-
-.contactcontent {
+.content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers children horizontally */
-    text-align: center; /* Centers text inside <p> */
-    margin-top: 5%;
-    margin-bottom: 7%;
-}
-
-.contactcontent p strong{
-    color: rgb(54, 53, 53);
-}
-
-.touch{
-
-    display: flex;
+    justify-content: center;
     align-items: center;
-   margin: 5% ;
-    width: 100%;
-   justify-content: flex-start;
-   padding-left: 15%;
-    
-    
-}
-
-.touch button{
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    margin-top: 90px;
+    background-color: black;
     color: white;
-    font-size: 0.8rem;
-    width: 200px;
-    padding: 10px;
-    border-radius: 24px;
-    text-align: center;
-    
-    cursor: pointer;
-    border : 1px solid rgba(255, 255, 255, 0.05); 
+    padding-top:10%;
+    padding-bottom: 10%;
    
-    
 }
 
-/* .touch button:hover{
+.first {
+    color: #69cc7a;
+    font-family: sans-serif;
+    font-size: 22px;
+    padding: 1%;
+}
+
+.second{
+
+}
+
+.third{
+
+    font-weight: 600;
+    font-size: 32px;
+    padding: 1%;
+}
+
+.btnicon{
     background-color: transparent;
-    color: black;
-    border: 2px solid black;
-} */
-
-@media only screen and (max-width: 416px)and (min-width:385px) {
-    .contactcontent p{
-        font-size: 25px;
-        
-        order: 1;
-    }
-
-   
-    .contactcontent{
-      
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Centers children horizontally */
-            text-align: center; /* Centers text inside <p> */
-       
-    }
-
-    .pic{
-       display: none;
-    }
-
-    .touch {
-       padding-left: 20%;
-        align-items: center;
-        display: flex;
-        margin: 9%  ;
-        width: 100%;
-        order: 2;
-        
-      
-        
-        
-
-    }
-    
-  }
-
-  
-  @media only screen and (max-width: 385px) {
-   
-
-    .contactcontent p{
-        text-align: center;
-        
-    }
-    .touch {
-        padding-left: 20%;
-        align-items: center;
-        display: flex;
-        margin: 9% auto;
-        width: 100%;
-        order: 2;
-        
-        
-
-    }
-
-    .contactcontent{
-      
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centers children horizontally */
-        text-align: center; /* Centers text inside <p> */
-   
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
-    .pic{
-        display: none;
+.btnicon .icon1{transition: transform 0.2s ease-in-out;}
+
+.btnicon:hover .icon1:hover{
+    color: #ffa727;
+    transform: scale(1.09);
+}
+
+
+.bottom{
+    margin-top: 1%;
+}
+
+.touch button {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #69cc7a;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.touch button:hover{
+    transform: scale(1.05);
+    background-color: #3fac52;
+}
+@media (max-width: 530px){
+    .first {
+        color: #69cc7a;
+        font-family: sans-serif;
+        font-size: 12px;
+        padding: 1%;
+        text-align: center;
     }
-  }
-
-  @media only screen and (max-width: 330px) and (min-width:320px){
-
-    .contactcontent p{
-        font-size: 15px;
-    }
-    .touch {
-        width: 80%;
-        margin-top: 9%;
-
-    }
-
     
-  }
+    .second{
+    
+    }
+    
+    .third{
+    
+        font-weight: 600;
+        font-size: 22px;
+        padding: 1%;
+        text-align: center;
+    }
+
+    .touch button {
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #69cc7a;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+    }
+}

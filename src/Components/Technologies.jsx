@@ -18,6 +18,12 @@ import py from '../Assets/py.png';
 import tcss from '../Assets/tcss.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from './Variants';
+import { FaCss3, FaHtml5, FaJava, FaJs, FaNodeJs, FaPhp, FaPython, FaReact } from 'react-icons/fa';
+import { FaC } from 'react-icons/fa6';
+import { RiTailwindCssFill } from 'react-icons/ri';
+import { CgShapeCircle } from 'react-icons/cg';
+import { SiAdobeillustrator, SiAdobephotoshop, SiAdobexd, SiCsharp, SiSpringboot } from 'react-icons/si';
+import { FiFigma } from 'react-icons/fi';
 
 export default function Technologies() {
     const [show, setShow] = useState(false); // Initially set to false to hide content
@@ -51,34 +57,29 @@ export default function Technologies() {
             window.removeEventListener('resize', handleResize); // Cleanup
         };
     }, []);
-    return (
+    return (<>
+        <div className='title'>TECH STACK</div>
        <div className='maintech'>
-            <motion.div
-                initial="hidden"
-                animate={show ? "show" : "hidden"}
-                variants={fadeIn("up", 0.7)}
-                className='tech'
-            >
-                <p className='title'>TECH STACK</p>
-                <div className='imageslogo'>
-                <img src={HTML} alt="HTML" />
-                <img src={CSS} alt="CSS" />
-                <img src={JS} alt="JavaScript" />
-                <img src={PHP} alt="PHP" />
-                <img src={c} alt="C" />
-                <img src={cs} alt="C Sharp" />
-                <img src={py} alt="Python" />
-                <img src={tcss} alt="Tailwind CSS" />
-                <img src={Java} alt="Java" />
-                <img src={MySql} alt="MySQL" />
-                <img src={Node} alt="Node.js" />
-                <img src={Ract} alt="React" />
-                <img src={Ai} alt="Adobe Illustrator" />
-                <img src={Ps} alt="Adobe Photoshop" />
-                <img src={figma} alt="Figma" />
-                <img src={Xd} alt="Adobe XD" />
-                </div>
-            </motion.div></div>
-       
+        
+            <div className='tech'><FaHtml5/></div>
+            <div className='tech'><FaCss3/></div>
+            <div className='tech'><RiTailwindCssFill/></div>
+            <div className='tech'><FaJs/></div>
+            <div className='tech'><FaJava/></div>
+            <div className='tech'><FaPhp/></div>
+            <div className='tech'><FaNodeJs/></div>
+            <div className='tech'><FaReact/></div>
+            <div className='tech'><FaC/></div>
+            <div className='tech'><FaPython/></div>
+           
+            <div className='tech'><SiCsharp/></div>
+            <div className='tech'><SiSpringboot/></div>
+            <div className='tech'><FiFigma/></div>
+            <div className='tech'><SiAdobexd/></div>
+            <div className='tech'><SiAdobeillustrator/></div>
+            <div className='tech'><SiAdobephotoshop/></div>
+
+           </div>
+       </>
     );
 }

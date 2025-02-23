@@ -6,6 +6,12 @@ import arrowdown from '../Assets/arrowdown.png';
 import power from '../Assets/power.png'
 import { BsBehance, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { BiRightArrow } from 'react-icons/bi';
+import avatar from "../Assets/meavatar.png"
+import wave from "../Assets/wave.svg"
+import color from "../Assets/color.png"
+import puzzel from "../Assets/puzzle.png"
+
+
 
 // Define fade-in variant
 const fadeInVariant = {
@@ -14,79 +20,37 @@ const fadeInVariant = {
 };
 
 export default function Homecontent() {
-  const textRef = useRef(null);
 
-  useEffect(() => {
-    const text = textRef.current;
-    if (text) {
-      const textContent = text.textContent; // Get the text content
-      text.innerHTML = ''; // Clear original text
-
-      textContent.split('').forEach((char, i) => {
-        const span = document.createElement('span');
-        span.style.transform = `rotate(${i * 14}deg)`; // Adjust rotation for spacing
-        span.textContent = char; // Set character
-        text.appendChild(span); // Append span to the text container
-      });
-    }
-  }, []);
 
   return (
 
     
     <>
+    <div className='allmain'>
+<div className='maincontent'><img src={wave} className='wave'></img>&nbsp; Hey , I am &nbsp; <button className='maincontentbtn name'>Manuri Rasara</button></div>
 
-<motion.div
-        className="subcontent"
-        variants={fadeInVariant}
-        initial="hidden"
-        animate="visible"
-      >
-        
-      </motion.div> 
-      {/* Fade-in effect for main content */}
-      <motion.div
-        className="maincontent"
-        variants={fadeInVariant}
-        initial="hidden"
-        animate="visible"
-      >
-         <p className='SmalltextHome'>Specialized in -Software Engineering | Web Development | UI/UX</p>
-        <span>PORTFOLIO<img src={power} className='power'></img><br /></span>
+<div className='maincontent'>I am a &nbsp;<button className='maincontentbtn ui'>&nbsp;UI/UX Designer</button>&nbsp; &&nbsp; <button className='maincontentbtn web'>&nbsp;Web Developer&nbsp;</button>&nbsp;<img src={puzzel} className='wave'/> </div>
+
+
+<div className='maincontent'><img src={color} className='wave'/>&nbsp;Also a &nbsp;<button className='maincontentbtn graphic'>&nbsp;Graphic Designer</button></div>
+</div>
+
+{/* 
         <div className='allicons'>
         <span className='icon'><BsLinkedin fontSize={12} color='rgb(173, 169, 169)'/><a href='https://www.linkedin.com/in/manurirasarahewage'>&nbsp;&nbsp;/Linkedin</a></span><span className='icon'><BsGithub fontSize={12} color='rgb(173, 169, 169)'/><a href='https://github.com/Manuri-Rasara'>&nbsp;&nbsp;/Github</a></span><span className='icon'><BsBehance fontSize={12} color='rgb(173, 169, 169)' /><a href='https://www.behance.net/manuri'>&nbsp;&nbsp;/Behance</a></span><span className='icon'><BsInstagram fontSize={12} color='rgb(173, 169, 169)'/> <a href='https://www.instagram.com/manuri_rasara?igsh=MXRjdDNwN3I0N2prbA=='>&nbsp;&nbsp;/Instargrame</a></span>
-        </div>
+        </div> */}
 
-        <div className='startbtn' onClick={() => window.location.href = '#About'}>
-          <span><BiRightArrow className='rightarrw' />Go</span>
-        </div>
+       
 
        
        
-      </motion.div>
-
    
 
-      {/* Fade-in effect for subcontent */}
+    
   
 
     
-     <motion.div
-        className="circle"
-        variants={fadeInVariant}
-        initial="hidden"
-        animate="visible"
-      >
-        <div className="logo"></div>
-        <div className="text">
-          <p ref={textRef}>Located in the Sri Lanka</p>
-        </div>
-      </motion.div> 
-
-      {/* Optionally, fade-in for the arrow down icon */}
-      {/* <motion.div className="arrowdown" variants={fadeInVariant} initial="hidden" animate="visible">
-        <a href='#'><img src={arrowdown} alt="Arrow Down" /></a>
-      </motion.div> */}
+     
     </>
   );
 }

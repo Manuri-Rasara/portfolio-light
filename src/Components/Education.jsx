@@ -39,48 +39,12 @@ export default function Time() {
 
 
 
-  return (
-    <div className="component-wrapper">
+  return (<>
     
-      <motion.div className='eduflexbox'
-      
-      initial="hidden"
-                        animate={show ? "show" : "hidden"}
-                        variants={fadeIn("left", 0.4)} >
-      <div className='edutitle'>EDUCATION</div>
-        <div className='educard'>
-          <h3 className='edumaintitle'>GCE ORDINARY LEVEL</h3>
-          <p>I successfully completed my Ordinary Level (O/L) examination in 2016 at Dankotuwa Girls College. 
-            This achievement marked an important milestone in my academic journey, building a strong foundation 
-            for my future studies and personal growth</p>
+    <div className="component-wrapper">
 
-        </div>
+    
 
-
-        <div className='educard'>
-          <h3 className='edumaintitle'>GCE ADVANCED LEVEL</h3>
-          <p>I completed my Advanced Level (A/L) examination in the physical science stream in 2019 at Dankotuwa 
-            Girls College. This achievement strengthened my foundation in mathematics and physics, preparing me for 
-            further studies and career development.</p>
-
-        </div>
-
-
-
-        <div className='educard'>
-          <h3 className='edumaintitle'>BCS DEGREE IN COMPUTER SCIENCE</h3>
-          <p>I am an undergraduate at the University of Ruhuna, pursuing a degree in Computer Science. 
-            This academic journey has allowed me to deepen my knowledge in various areas of computing, 
-            including programming, algorithms, and software development, as I work towards building a 
-            strong foundation for my future career in technology.</p>
-
-        </div>
-
-        
-
-        
-      </motion.div>
-
-    </div>
+    </div></>
   )
 }

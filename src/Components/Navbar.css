@@ -37,8 +37,8 @@
 }
 
 .logoname span {
-    color: rgb(173, 169, 169);
-    font-weight: 300;
+    color: black;
+    font-weight: 500;
     font-size: 1.1rem;
 }
 
@@ -58,8 +58,8 @@
     padding: 10px 10px;
     margin: 0px 5px;
     transition: all .50s ease;
-    color: rgb(167, 161, 161);
-    font-weight: 400;
+    color: black;
+    font-weight: 600;
     
 
     
@@ -67,8 +67,8 @@
 
 .header .rightpart a{
     text-decoration: none;
-    color: rgb(173, 169, 169);
-    font-weight: 300;
+    color: black;
+    font-weight: 600;
     font-size: 1rem;
 }
 
@@ -79,7 +79,7 @@
     
     -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
-    color: black;
+    color: #f86146 ;
     
    
 }

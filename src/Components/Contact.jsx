@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from './Variants';
 import React, { useEffect, useRef, useState } from 'react';
 import user from '../Assets/manuri-me.png'
+import { BsBehance, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 
 export default function Contact() {
     const [show, setShow] = useState(false); // Initially set to false to hide content
@@ -35,7 +36,7 @@ export default function Contact() {
 
     return (
         <div ref={contactRef}> {/* Attach ref to the main div */}
-            <div className='contactcontent' id="contact">
+            {/* <div className='contactcontent' id="contact">
                 <motion.p
                     initial="hidden"
                     animate={show ? "show" : "hidden"}
@@ -51,8 +52,43 @@ export default function Contact() {
 
 
                 </div>
-            </div>
+            </div> */}
             
+
+            <div className='content'>
+                <div className='first'>Let's Work Together</div>
+                <div className='second'>I Like Work as</div>
+                <div className='third'>Web Developer | UI/UX Designer</div>
+                <div className='touch'>
+                <a href="mailto:manurirasarahewage@gmail.com">
+                <button>GET IN TOUCH</button>
+                </a></div>
+                
+                <div className='bottom'>
+                <div className='allicons'>
+                <button onClick={() => window.location.href = "https://www.linkedin.com/in/manurirasarahewage"} className='btnicon'>
+                    <BsLinkedin fontSize={24} color="white" className='icon1' />
+                </button>
+
+                <button onClick={() => window.location.href = "https://github.com/Manuri-Rasara"} className='btnicon'>
+                <BsGithub fontSize={24} color='white' className='icon1'/>
+                </button>
+
+                <button onClick={() => window.location.href = "https://www.behance.net/manuri"} className='btnicon'>
+                <BsBehance fontSize={24} color='white' className='icon1'/>
+                </button>
+
+
+                <button onClick={() => window.location.href = "https://www.instagram.com/manuri_rasara?igsh=MXRjdDNwN3I0N2prbA=="} className='btnicon'>
+                <BsInstagram fontSize={24} color='white' className='icon1'/>
+                </button>
+
+
+</div>
+               
+</div>
+                
+     </div>     
         </div>
     );
 }
